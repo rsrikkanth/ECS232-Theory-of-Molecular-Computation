@@ -298,6 +298,20 @@ tileSystem genCounter() {
     mmseed2.glue = {{"mL", 1}, {"003SW", 1}, {"mL", 1}, {"ffM", 1}};
     rseed2.glue = {{"00110SWp", 1}, {"013SW", 1}, {"mL", 1}, {"ffR", 1}};
 
+    tile mg;
+    mg.label = "xp"; 
+    mg.glue = {{"00110SWp", 1}, {"011S", 2}, {"mmL", 1}, {"ffR", 1}};
+    tiles.push_back(mg);
+
+    mg.label = "xxp"; 
+    mg.glue = {{"01110SWp", 1}, {"ffR", 2}, {"oL", 1}, {"fR", 1}};
+    tiles.push_back(mg);
+
+
+    mg.label = "xxxp"; 
+    mg.glue = {{"10110Sp", 2}, {"", 0}, {"oL", 1}, {"ffR", 2}};
+    tiles.push_back(mg);
+
     tiles.push_back(lseed2); tiles.push_back(mseed2); tiles.push_back(mmseed2); tiles.push_back(rseed2); tiles.push_back(mseed3);
 
 
